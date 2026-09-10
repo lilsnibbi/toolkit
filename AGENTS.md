@@ -11,7 +11,7 @@ Published source is `src/index.ts`; there is no build step. Use Bun for packages
 
 - `src/`: one helper per camelCase file, exported from the root barrel.
 - `tests/`: matching `bun:test` files.
-- `scripts/`: release metadata, version synchronization, and release automation.
+- `scripts/`: release metadata verification.
 
 ## Conventions
 
@@ -31,6 +31,8 @@ CI installs with `bun install --frozen-lockfile`; keep a reproducible `bun.lock`
 
 ## Releases
 
-The single `release.yml` workflow matches an entire `vX.Y.Z` tip commit message on the default branch. It verifies, updates metadata, atomically pushes the version commit and tag, publishes to npm, and generates GitHub release notes. Ordinary commits do not release. See `.github/RELEASE_POLICY.md` for setup and retries.
-Release scripts can commit and push. Do not run them during ordinary verification.
-Keep duplicated release helpers aligned with sibling `logger` and `discord-kit` repositories.
+Release Please manages version and changelog PRs from Conventional Commits on main.
+Merging the release PR creates the tag and GitHub release; the publish job verifies
+and publishes that tag. See `.github/RELEASE_POLICY.md` for credentials and retries.
+Do not run release automation during ordinary verification.
+Keep shared release configuration and CI aligned with sibling repositories.
