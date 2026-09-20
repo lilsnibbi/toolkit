@@ -6,6 +6,7 @@
       "name": "@lilsnibbi/toolkit",
       "devDependencies": {
         "@biomejs/biome": "2.5.12",
+        "@lilsnibbi/dots": "github:lilsnibbi/dots#9de67a5844a4d53f98786d82f6e4c4d623beb823",
         "@types/bun": "1.4.2",
         "typescript": "7.0.2",
       },
@@ -29,6 +30,8 @@
     "@biomejs/cli-win32-arm64": ["@biomejs/cli-win32-arm64@2.5.12", "", { "os": "win32", "cpu": "arm64" }, "sha512-b9vtoZFsuZt1pdjNwJvXl0f+BpayRzV008uS2+JpmwIKdSE2qdu4A/l04FESwLoou5g2E/Qlec0xwJydZplH+A=="],
 
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.5.12", "", { "os": "win32", "cpu": "x64" }, "sha512-B1R/l+CwEpKFSuqiwePzPNRk1EiJN8kc0UhdafNz6MZN9v5OFP9HYP1irptvWzHrwVI4blVNGMbxc5zt70m3IA=="],
+
+    "@lilsnibbi/dots": ["@lilsnibbi/dots@github:lilsnibbi/dots#9de67a5", {}, "lilsnibbi-dots-9de67a5", "sha512-yumM42DQ/4HsbMyhbK/NRgnYjnfx0t0JWSyhDP+WWClG0ezLxwUr9aqUPYNgYSxDkVLXTaSC4cZ70C8WjlZ1WQ=="],
 
     "@types/bun": ["@types/bun@1.4.2", "", { "dependencies": { "bun-types": "1.4.2" } }, "sha512-GimotNn7+ZV0uVArItBbriZsR1oNf0+WTzPkdcFrzShI7k2norL0uzEaJT8T33dWr7O/c9ZDuAFQrctKCi72oQ=="],
 
